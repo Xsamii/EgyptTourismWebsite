@@ -1,0 +1,76 @@
+﻿@*@using EgyptTouristWebSite.ViewModel*@
+@model List<InterestingPlace>
+<h1>@Model[0].Type.Type</h1>
+<div class="row" id="places-container">
+    @foreach (var place in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="/Images/@place.Image" alt="@place.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@place.Name</h5>
+                    <p class="card-text">@place.Description</p>
+                    <p class="card-text">@place.Type.Type</p>
+                    <div class="rating">
+                        @for (int i = 0; i < place.Rate; i++)
+                        {
+                            <span class="fa fa-star checked" style="color:gold"></span>
+                        }
+                        @for (int i = place.Rate; i < 5; i++)
+                        {
+                            <span class="fa fa-star"></span>
+                        }
+                    </div>
+                    <a href="@Url.Action("Details", "InterestingPlace", new { id = place.Id })" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@*<div class="row">
+    <div class="col-md-12">
+        <div id="load-more-btn-container">
+            <button id="load-more-btn" class="btn btn-primary">Load More</button>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        var pageIndex = 1;
+        var isLoading = false;
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() + $(window).height() >= $(document).height() && !isLoading) {
+                    loadMoreData();
+                }
+            });
+            $("#load-more-btn").click(function () {
+                loadMoreData();
+            });
+        });
+        function loadMoreData() {
+            isLoading = true;
+            $("#load-more-btn").html("Loading...");
+            $.ajax({
+                url: "@Url.Action("GetMorePlaces", "Home")",
+                type: "GET",
+                data: { pageIndex: pageIndex },
+                success: function (result) {
+                    $("#places-container").append(result);
+                    isLoading = false;
+                    pageIndex++;
+                    $("#load-more-btn").html("Load More");
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr.responseText);
+                    isLoading = false;
+                    $("#load-more-btn").html("Load More");
+                }
+            });
+        }
+    </script>
+}*@
+

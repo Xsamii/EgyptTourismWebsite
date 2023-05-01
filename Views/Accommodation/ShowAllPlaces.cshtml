@@ -1,0 +1,588 @@
+﻿@using EgyptTouristWebSite.ViewModel;
+@using Newtonsoft.Json;
+@model AccommodationsViewModel
+
+@{
+    ViewData["Title"] = "Accommodations";
+
+}
+
+@functions {
+    public static bool IsChecked(string[] values, string targetValue)
+    {
+        return values != null && values.Contains(targetValue);
+    }
+}
+<style>
+
+
+    .slider-container {
+        /*        position: relative;
+    */
+    }
+
+    .slider {
+        overflow-x: scroll;
+        white-space: nowrap;
+        /*        transition: 0.5s ease-in-out;
+    */
+    }
+
+        .slider::-webkit-scrollbar {
+            display: none; /* Add this to remove the scroll bar */
+        }
+
+    /* .slider .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+                border-radius: 5px;
+                width: 250px;
+                margin: 10px;
+                display: inline-block;
+            }
+
+                .slider .card:hover {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                }
+
+                .slider .card img {
+                    border-radius: 5px 5px 0 0;
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+                .slider .card .card-body {
+                    padding: 10px;
+                }*/
+
+    .slider-controls {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 5;
+    }
+
+    .slider-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+        .slider-btn:hover {
+            color: #ccc;
+        }
+
+    .slider-prev-btn {
+        color: gold;
+        margin-left: 10px;
+    }
+
+    .slider-next-btn {
+        color: gold;
+        margin-right: 10px;
+    }
+
+
+
+
+
+
+
+    .wrapper {
+        /*    position: absolute;
+        top:50%;
+        left:50%;*/
+        /*    transform: translate(-50%, -50%);
+    */
+        width: 430px;
+        /*    max-width: 350px;
+        height:auto;*/
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+
+        display: inline-block; /*test/**/
+    }
+
+    .card_s {
+        /* flex: 1;
+        flex-basis: 300px;
+        flex-grow: 0;*/
+        height: 400px;
+        background: #fff;
+        border: 2px solid #fff;
+        box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+        cursor: pointer;
+        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        overflow: hidden;
+        position: relative;
+    }
+
+        .card_s img {
+            width: 100%;
+            height: 100%;
+            transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        }
+
+    .descriptions {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(255,255,255,.7);
+        width: 100%;
+        height: 100%;
+        transition: all .7s ease-in-out;
+        padding: 20px;
+        box-sizing: border-box;
+        clip-path: circle(0% at 100% 100%);
+        white-space: normal;
+    }
+
+    .card_s:hover .descriptions {
+        left: 0px;
+        transition: all .7s ease-in-out;
+        clip-path: circle(75%);
+    }
+
+    .card_s:hover {
+        transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+        box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+        transform: scale(.97);
+    }
+
+        .card_s:hover img {
+            transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+            transform: scale(1.6) rotate(20deg);
+            filter: blur(3px);
+        }
+
+    .card_s h3 {
+        color: #ff3838;
+        letter-spacing: 1px;
+        margin: 0px;
+    }
+
+    .card_s p {
+        line-height: 24px;
+        height: 180px;
+        overflow-y: clip;
+    }
+
+    .card_s pr {
+        display: block;
+    }
+
+    .card_s button {
+        width: fit-content;
+        height: 40px;
+        cursor: pointer;
+        border-style: none;
+        background-color: #ff3838;
+        color: #fff;
+        font-size: 15px;
+        outline: none;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+        transition: all .5s ease-in-out;
+    }
+
+        .card_s button:hover {
+            transform: scale(.95) translateX(-5px);
+            transition: all .5s ease-in-out;
+        }
+
+
+
+    /*.form-group{
+            display:flex;
+        }*/
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <h1>Accommodations</h1>
+
+<div class="dropdown" style="width:50%;padding-left: 20px;">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filters
+    </button>
+    <button id="resetFilterBtn" class="btn btn-secondary">Reset all filters</button>
+
+    <div class="dropdown-menu w-100 bg-light" aria-labelledby="dropdownMenuButton" style="z-index:1001">
+        <div class="row mb-3">
+            <div class="">
+                <form id="filterForm" method="get" asp-action="ShowFilteredPlaces" asp-controller="Accommodation">
+                    <div class="d-flex w-100 ">
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Type:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Hotel" @(IsChecked(ViewBag.AccomTypes, "Hotel") ? "checked" : "")>
+                                <label class="form-check-label">Hotel</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Resort" @(IsChecked(ViewBag.AccomTypes, "Resort") ? "checked" : "")>
+                                <label class="form-check-label">Resort</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Motel" @(IsChecked(ViewBag.AccomTypes, "Motel") ? "checked" : "")>
+                                <label class="form-check-label">Motel</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Price:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="0-2000" @(IsChecked(ViewBag.PriceRanges, "0-2000") ? "checked" : "")>
+                                <label class="form-check-label">0-2000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="2000-4000" @(IsChecked(ViewBag.PriceRanges, "2000-4000") ? "checked" : "")>
+                                <label class="form-check-label">2000-4000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="4000-6000" @(IsChecked(ViewBag.PriceRanges, "4000-6000") ? "checked" : "")>
+                                <label class="form-check-label">4000-6000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="6000" @(IsChecked(ViewBag.PriceRanges, "6000+") ? "checked" : "")>
+                                <label class="form-check-label">6000+ EGP</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Rating:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="1" @(IsChecked(ViewBag.Ratings, "1") ? "checked" : "")>
+                                <label class="form-check-label">1 star</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="2" @(IsChecked(ViewBag.Ratings, "2") ? "checked" : "")>
+                                <label class="form-check-label">2 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="3" @(IsChecked(ViewBag.Ratings, "3") ? "checked" : "")>
+                                <label class="form-check-label">3 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="4" @(IsChecked(ViewBag.Ratings, "4") ? "checked" : "")>
+                                <label class="form-check-label">4 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="5" @(IsChecked(ViewBag.Ratings, "5") ? "checked" : "")>
+                                <label class="form-check-label">5 stars</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary w-100">Filter</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row mb-3">
+    <div class="col-md-9">
+        <form id="searchForm" method="get" asp-action="SearchByName" asp-controller="Accommodation">
+            <div class="input-group">
+                <input id="searchBox" type="text" class="form-control" name="searchString" placeholder="Search Accommodations by Name" />
+                <button id="seacrhBtn" type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+    </div>
+  </div>
+</nav>
+
+@*<h1>Accommodations</h1>
+
+<div class="row mb-3">
+    <div class="col-md-9">
+        <form id="searchForm" method="get" asp-action="SearchByName" asp-controller="Accommodation">
+            <div class="input-group">
+                <input id="searchBox" type="text" class="form-control" name="searchString" placeholder="Search Accommodations by Name" />
+                <button id="seacrhBtn" type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
+</div>*@
+
+
+@*
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filters
+    </button>
+    <button id="resetFilterBtn" class="btn btn-secondary">Reset all filters</button>
+
+    <div class="dropdown-menu w-100 bg-light" aria-labelledby="dropdownMenuButton" style="z-index:1001">
+        <div class="row mb-3">
+            <div class="">
+                <form id="filterForm" method="get" asp-action="ShowFilteredPlaces" asp-controller="Accommodation">
+                    <div class="d-flex w-100 ">
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Type:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Hotel" @(IsChecked(ViewBag.AccomTypes, "Hotel") ? "checked" : "")>
+                                <label class="form-check-label">Hotel</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Resort" @(IsChecked(ViewBag.AccomTypes, "Resort") ? "checked" : "")>
+                                <label class="form-check-label">Resort</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="types" value="Motel" @(IsChecked(ViewBag.AccomTypes, "Motel") ? "checked" : "")>
+                                <label class="form-check-label">Motel</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Price:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="0-2000" @(IsChecked(ViewBag.PriceRanges, "0-2000") ? "checked" : "")>
+                                <label class="form-check-label">0-2000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="2000-4000" @(IsChecked(ViewBag.PriceRanges, "2000-4000") ? "checked" : "")>
+                                <label class="form-check-label">2000-4000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="4000-6000" @(IsChecked(ViewBag.PriceRanges, "4000-6000") ? "checked" : "")>
+                                <label class="form-check-label">4000-6000 EGP</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="prices" value="6000" @(IsChecked(ViewBag.PriceRanges, "6000+") ? "checked" : "")>
+                                <label class="form-check-label">6000+ EGP</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 card-header">
+                            <label><h5>Rating:</h5></label>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="1" @(IsChecked(ViewBag.Ratings, "1") ? "checked" : "")>
+                                <label class="form-check-label">1 star</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="2" @(IsChecked(ViewBag.Ratings, "2") ? "checked" : "")>
+                                <label class="form-check-label">2 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="3" @(IsChecked(ViewBag.Ratings, "3") ? "checked" : "")>
+                                <label class="form-check-label">3 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="4" @(IsChecked(ViewBag.Ratings, "4") ? "checked" : "")>
+                                <label class="form-check-label">4 stars</label>
+                            </div>
+                            <div class="form-check  ">
+                                <input class="form-check-input" type="checkbox" name="ratings" value="5" @(IsChecked(ViewBag.Ratings, "5") ? "checked" : "")>
+                                <label class="form-check-label">5 stars</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary w-100">Filter</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+<script>
+    //nedded for partial view of accomdetions
+    let hoteldata = [];
+    let resortdata = [];
+    let moteldata = [];
+    
+</script>
+<partial name="MapPartialView" model="Model" />
+  <script>
+    var myModel = @Html.Raw(JsonConvert.SerializeObject(Model));
+    let hotels = creatFeatures(myModel.accsList[0], "placeholder.png", "Hotel")
+        let resorts = creatFeatures(myModel.accsList[1], "blue.png", "Resort")
+        let motels = creatFeatures(myModel.accsList[2], "orange.png", "Motel")
+
+        map.addLayer(hotels);
+        map.addLayer(resorts);
+        map.addLayer(motels);
+     
+        creatLayerListHandelCheckBox(map);
+       
+       
+    </script>
+<div id="FullModel">
+
+    @foreach (var accList in Model.accsList)
+{
+    <div class="container">
+        <h2>@accList[0].Type.Type</h2>
+        <div class="slider-container">
+            <div class="slider" id="@accList[0].Type.Type-slider">
+                @foreach (var place in accList)
+                {
+ 
+                                            <div class="wrapper">
+                            <div class="card_s">
+                                        <img src="/Images/@place.Image" alt="" srcset="">
+                                <div class="descriptions">
+                                            <h3 class="">@place.Name</h3>
+                                    <p>
+                                        @place.Description   </p>
+                                                <div class="rating">
+                                        @for (int i = 0; i < place.Rate; i++)
+                                        {
+                                                <span class="fa fa-star checked" style="color:gold"></span>
+                                        }
+                                        @for (int i = place.Rate; i < 5; i++)
+                                        {
+                                                <span class="fa fa-star"></span>
+                                        }
+                                    </div>
+                                                <pr>@place.Price EGP</pr>
+                                        <button>
+                                                <a href="@Url.Action("Details", "Accommodation", new { id = place.Id })">Readmore</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+@*                    <div class="card">
+                        <img src="/Images/@place.Image" alt="@place.Name">
+                        <div class="card-body">
+                            <h4>@place.Name</h4>
+                            <p>@place.Description</p>
+                            <div class="rating">
+                                @for (int i = 0; i < place.Rate; i++)
+                                {
+                                    <span class="fa fa-star checked" style="color:gold"></span>
+                                }
+                                @for (int i = place.Rate; i < 5; i++)
+                                {
+                                    <span class="fa fa-star"></span>
+                                }
+                            </div>
+                            <p>@place.Price</p>
+                            <a href="@Url.Action("Details", "Accommodation", new { id = place.Id })" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>*@
+
+                }
+            </div>
+
+
+
+            <div class="slider-controls">
+                <button class="slider-btn slider-prev-btn" data-slider="#@accList[0].Type.Type-slider"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn slider-next-btn" data-slider="#@accList[0].Type.Type-slider"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" onclick="location.href='@Url.Action("ShowPlacesByCategory", "Accommodation", new { category = @accList[0].Type.Type })'">View All</button>
+    
+    </div>
+}
+</div>
+<div id="accommodations-list-filtered">
+</div>
+
+
+
+
+
+
+
+
+
+@section Scripts{
+    <script defer>
+        const sliders = document.querySelectorAll('.slider');
+     
+
+        sliders.forEach(slider => {
+            const prevBtn = slider.parentElement.querySelector('.slider-prev-btn');
+            const nextBtn = slider.parentElement.querySelector('.slider-next-btn');
+
+            let scrollAmount = 0;
+            const cardWidth = slider.querySelector('.card_s').offsetWidth + 20;
+            const cardsDisplayed = Math.floor(slider.offsetWidth / cardWidth);
+                const totalCards = slider.querySelectorAll('.card_s').length;
+
+            // Show prev and next buttons only if more cards than displayed
+            if (totalCards > cardsDisplayed) {
+                prevBtn.style.display = 'block';
+                nextBtn.style.display = 'block';
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+
+            // Prev and next butns functionality
+            prevBtn.addEventListener('click', () => {
+                if (scrollAmount !== 0) {
+                    scrollAmount += cardWidth;
+                    slider.scrollBy({ left: `-${cardWidth}`, behavior: "smooth" });
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (scrollAmount !== (slider.scrollWidth - slider.offsetWidth)) {
+                    scrollAmount += cardWidth;
+                    slider.scrollBy({ left: `${cardWidth}`, behavior: "smooth" });
+                    console.log(cardWidth);
+                }
+            });
+
+            slider.addEventListener('scroll', () => {
+                scrollAmount = slider.scrollLeft;
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Filter and search forms Functionality
+            $('form').submit(showFiltered);
+            // Clear All Filters button Functionality
+            $('#resetFilterBtn').on('click', function (event) {
+                location.reload();
+                //$('#filterForm').trigger('reset');
+                //$('#FullModel').show();
+                //$('#accommodations-list-filtered').html('');
+                //$('#searchBox').val('');
+            });
+        });
+
+        function showFiltered(event) {
+            event.preventDefault();
+            //Prevent search of whitespace and null values in search box, and filters will trigger search only by filter button
+            if (
+
+                (jQuery.trim($('#searchBox').val()).length > 0 && event.target.id == 'searchForm')
+                ||
+                ($('#filterForm input[type="checkbox"]:checked').length != 0 && event.target.id == 'filterForm')
+
+            ) {
+                $('#FullModel').hide();
+                ClearLayers();
+                if (event.target.id == 'searchForm') { $('#filterForm').trigger('reset'); }else{$('#searchForm').trigger('reset');}
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: $(this).serialize(),
+                    success: function (result) {
+                        $('#accommodations-list-filtered').html(result);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log('Error: ' + error);
+                    }
+                });
+            }
+        }
+    </script>
+    
+}
+

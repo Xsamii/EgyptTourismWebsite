@@ -1,0 +1,77 @@
+﻿@using EgyptTouristWebSite.ViewModel
+@model AdminDashboardViewModel
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div  class="d-flex flex-wrap">
+                <div class="w-20 m-1">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">User Accounts</h5>
+                            <p class="card-text">@Model.NumUserAccounts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20 m-1">
+                    <div class="card bg-success text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Accommodations</h5>
+                            <p class="card-text">@Model.NumAccommodations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20 m-1">
+                    <div class="card bg-info text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Places</h5>
+                            <p class="card-text">@Model.NumPlaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20 m-1">
+                    <div class="card bg-warning text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Services</h5>
+                            <p class="card-text">@Model.NumServices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-20 m-1">
+                    <div class="card bg-danger text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel Agencies</h5>
+                            <p class="card-text">@Model.NumTravelAgencies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>User Data</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>User Name</th>
+                                <th>Age</th>
+                                <th>Nationality</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model.Users)
+                            {
+                                <tr>
+                                    <td>@user.Id</td>
+                                    <td>@user.UserName</td>
+                                    <td>@user.age</td>
+                                    <td>@user.Nationality</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

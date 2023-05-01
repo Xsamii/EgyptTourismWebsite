@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EgyptTouristWebSite
+build_property.RootNamespace = EgyptTouristWebSite
+build_property.ProjectDir = D:\ITI\Programming Courses\ASP.net\Final Project\EgyptTouristWebSite\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ITI\Programming Courses\ASP.net\Final Project\EgyptTouristWebSite
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Accommodation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Accommodation/FilteredAccommodationsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxGaWx0ZXJlZEFjY29tbW9kYXRpb25zUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Accommodation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Accommodation/ShowAllPlaces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxTaG93QWxsUGxhY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Accommodation/ShowAllPlacesolld.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxTaG93QWxsUGxhY2Vzb2xsZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/DashBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/InterestingPlace/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3RpbmdQbGFjZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/InterestingPlace/ShowAllPlaces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3RpbmdQbGFjZVxTaG93QWxsUGxhY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/InterestingPlace/ShowPlacesByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50ZXJlc3RpbmdQbGFjZVxTaG93UGxhY2VzQnlDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Service/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Service/ShowAllServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTaG93QWxsU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Service/ShowServicesByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxTaG93U2VydmljZXNCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/MapPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hcFBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/_RegistrationPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3RyYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/TravelAgency/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdmVsQWdlbmN5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/TravelAgency/ShowAllPlaces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdmVsQWdlbmN5XFNob3dBbGxQbGFjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI/Programming Courses/ASP.net/Final Project/EgyptTouristWebSite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wgqd56r75k

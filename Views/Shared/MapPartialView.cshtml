@@ -1,0 +1,172 @@
+﻿
+@using Newtonsoft.Json;
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" />
+<div class="section-gis">
+   
+        <nav class="navbar navbar-default" id="search">
+            <input type="text"
+                    name="search"
+                    class="form-control"
+                    id="searchbox"
+                    placeholder="Where to" />
+                <ul class="list-group" id="placeopetion"></ul>
+                <select placeholder="Basemaps" id="basemapselector" class="dropdown-menu" name="selectbox">
+            <option value="OSM" >OSM</option>
+            <option value="Esri" selected>Imagery</option>
+                </select>
+
+                <div class="form-group" id="layers" >
+                    <ul id="checkbox-list" class="form-check form-check-inline">
+                    </ul>
+                </div>
+        </nav>
+       <div id="map"></div>
+      
+</div>
+
+<div class="pop" >
+    
+     <img id="image" >
+        <div class="body">
+            <h6 id="name"></h6>
+        
+        <a id="go" class="btn btn-primary">Details</a>
+        </div>
+</div>
+<style>
+    .section-gis{
+        justify-content: center;
+        border: 1px solid rgb(210, 215, 211);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        /* margin-left: 50px; */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-flow: column;
+        /* align-self: center; */
+        align-items: center;
+        margin: 0px;
+    }
+ 
+    #map {
+        width: 70%;
+        height: 500px;
+        
+    }
+    #search {
+  
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.01);
+        width:70%;
+        justify-content: flex-start;
+       
+    }
+
+    #searchbox {
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-left:50px;
+         width:400px;
+        transition: 0.3s;
+    }
+
+    #placeopetion {
+        display: flex;
+        width: 400px;
+        overflow: auto;
+        display: inline;
+        position: absolute;
+        top: 65px;
+        left: 50px;
+        z-index: 2;
+        list-style-type: none;
+        transition: 0.3s;
+    }
+    #placeopetion li{
+            background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    #placeopetion input{
+        padding:5px;
+    }
+    #basemapselector{
+      
+        display:block;
+        position:unset;
+        margin-left:50px;
+    }
+    #layers{
+        list-style-type: none;
+        margin-left:40px;
+    }
+    #layers li{
+            float: left;
+            padding:10px;
+        }
+    .checkbox-list {
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:inline-block;
+        
+    }
+
+ /*  map_popup_style*/
+
+    .pop {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        width: 130px;
+        height: 180px;
+        display: inline-block;
+        background-color: rgb(210, 215, 225);
+        font-size:small;
+    }
+
+   
+
+    #image {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    #go{
+      padding:2px;
+
+    }
+</style>
+
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+
+
+        let map = CreateMap();
+        //change basemap handeler
+     
+         changebasemap(map);
+         //geocoding
+         Geocoding(map);
+         //jason from model                
+
+</script>
+
+
+
+
+
+
+  

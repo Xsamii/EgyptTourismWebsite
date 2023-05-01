@@ -1,0 +1,621 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EgyptTouristWebSite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EgyptTouristWebSite.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\1.jpg",
+      "PackagePath": "staticwebassets\\Images\\1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\AgaKhan.jpg",
+      "PackagePath": "staticwebassets\\Images\\AgaKhan.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Ahmed.jpg",
+      "PackagePath": "staticwebassets\\Images\\Ahmed.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Ahmedibntulan.jpg",
+      "PackagePath": "staticwebassets\\Images\\Ahmedibntulan.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\AlAzharMosque.jpg",
+      "PackagePath": "staticwebassets\\Images\\AlAzharMosque.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Alex.jpg",
+      "PackagePath": "staticwebassets\\Images\\Alex.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\BabZuweila.jpg",
+      "PackagePath": "staticwebassets\\Images\\BabZuweila.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bahariya-Oasis.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bahariya-Oasis.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank6.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Bank7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Bank7.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\DreamPark.jpg",
+      "PackagePath": "staticwebassets\\Images\\DreamPark.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\FarafraOasis.jpg",
+      "PackagePath": "staticwebassets\\Images\\FarafraOasis.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Gourna.jpg",
+      "PackagePath": "staticwebassets\\Images\\Gourna.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hatshepsut.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hatshepsut.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel.png",
+      "PackagePath": "staticwebassets\\Images\\Hotel.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hotel1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hotel2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hotel3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hotel4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Hotel5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Hotel5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Luxor.jpg",
+      "PackagePath": "staticwebassets\\Images\\Luxor.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\MagicGalaxy.jpg",
+      "PackagePath": "staticwebassets\\Images\\MagicGalaxy.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall6.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Mall7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Mall7.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\MonasteroAntonio.jpg",
+      "PackagePath": "staticwebassets\\Images\\MonasteroAntonio.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Monastery.jpg",
+      "PackagePath": "staticwebassets\\Images\\Monastery.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Muhammad Ali Mosque.jpg",
+      "PackagePath": "staticwebassets\\Images\\Muhammad Ali Mosque.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\PharaohBath.jpg",
+      "PackagePath": "staticwebassets\\Images\\PharaohBath.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Resort6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Resort6.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Siwa_oasis.jpg",
+      "PackagePath": "staticwebassets\\Images\\Siwa_oasis.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\TheMadrasaofSultanHassan.jpg",
+      "PackagePath": "staticwebassets\\Images\\TheMadrasaofSultanHassan.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel1.png",
+      "PackagePath": "staticwebassets\\Images\\Travel1.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel6.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel7.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Travel8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Travel8.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Views.rar",
+      "PackagePath": "staticwebassets\\Images\\Views.rar"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\Zania.jpg",
+      "PackagePath": "staticwebassets\\Images\\Zania.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\blue.png",
+      "PackagePath": "staticwebassets\\Images\\blue.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\cairo.jfif",
+      "PackagePath": "staticwebassets\\Images\\cairo.jfif"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\el-gouna.jpg",
+      "PackagePath": "staticwebassets\\Images\\el-gouna.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\embassy1.jpg",
+      "PackagePath": "staticwebassets\\Images\\embassy1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\embassy2.jpg",
+      "PackagePath": "staticwebassets\\Images\\embassy2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\embassy3.jpg",
+      "PackagePath": "staticwebassets\\Images\\embassy3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\embassy4.jpg",
+      "PackagePath": "staticwebassets\\Images\\embassy4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\embassy5.jpg",
+      "PackagePath": "staticwebassets\\Images\\embassy5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\google-maps.png",
+      "PackagePath": "staticwebassets\\Images\\google-maps.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\green.png",
+      "PackagePath": "staticwebassets\\Images\\green.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\hurghada-beach.jpg",
+      "PackagePath": "staticwebassets\\Images\\hurghada-beach.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\mooses-pool-sinai.jpg",
+      "PackagePath": "staticwebassets\\Images\\mooses-pool-sinai.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\motel1.jpg",
+      "PackagePath": "staticwebassets\\Images\\motel1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\motel2.jpg",
+      "PackagePath": "staticwebassets\\Images\\motel2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\motel3.jpg",
+      "PackagePath": "staticwebassets\\Images\\motel3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\motel4.jpg",
+      "PackagePath": "staticwebassets\\Images\\motel4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\motel5.jpg",
+      "PackagePath": "staticwebassets\\Images\\motel5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\mouseclickpin.png",
+      "PackagePath": "staticwebassets\\Images\\mouseclickpin.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\orange.png",
+      "PackagePath": "staticwebassets\\Images\\orange.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\placeholder.png",
+      "PackagePath": "staticwebassets\\Images\\placeholder.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\ras-mohammed.jpg",
+      "PackagePath": "staticwebassets\\Images\\ras-mohammed.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant1.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant1.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant2.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant2.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant3.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant3.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant4.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant4.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant5.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant5.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant6.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant6.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\restaurant7.jpg",
+      "PackagePath": "staticwebassets\\Images\\restaurant7.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\siwa-oasis.jpg",
+      "PackagePath": "staticwebassets\\Images\\siwa-oasis.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\travel-1.png",
+      "PackagePath": "staticwebassets\\Images\\travel-1.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\travel-3.png",
+      "PackagePath": "staticwebassets\\Images\\travel-3.png"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\Images\\wadi-el-gemal.jpg",
+      "PackagePath": "staticwebassets\\Images\\wadi-el-gemal.jpg"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ITI\\Programming Courses\\ASP.net\\Final Project\\EgyptTouristWebSite\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EgyptTouristWebSite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EgyptTouristWebSite.props",
+      "PackagePath": "build\\EgyptTouristWebSite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EgyptTouristWebSite.props",
+      "PackagePath": "buildMultiTargeting\\EgyptTouristWebSite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EgyptTouristWebSite.props",
+      "PackagePath": "buildTransitive\\EgyptTouristWebSite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

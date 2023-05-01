@@ -1,0 +1,100 @@
+﻿@using Newtonsoft.Json
+@model Service
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.Name</title>
+</head>
+<div >
+    <div class="row">
+        <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-fluid" src="/Images/@Model.Image" alt="@Model.Name" /> 
+     
+            <a class=" btn btn-primary btn w-100" href="@Url.Action("Reserve", "Service", new { id = Model.Id })">Add to My Services list</a>
+            
+        </div> 
+        <div class="card-body col-6"> 
+            <h1>@Model.Name</h1> 
+            <p>@Model.Description
+            </p> 
+            <dl class="row justify-content-center"> 
+                    <dt class="col-sm-3">Service Type:</dt> 
+                    <dd class="col-sm-9">@Model.Type.Type</dd> 
+                    @*<dt class="col-sm-3">Coordinates:</dt> 
+                    <dd class="col-sm-9">X: @Model.X, Y: @Model.Y</dd> *@
+                    <dt class="col-sm-3">Website:</dt> 
+                    <dd class="col-sm-9"> 
+                        <a href="@Model.Website">@Model.Website</a> 
+                    </dd> 
+                    <dt class="col-sm-3">Rate:</dt> 
+                    <dd class="col-sm-9"> 
+                        <div class="rating"> 
+                        @for (int i = 0; i < Model.Rate; i++)
+                        {
+                            <span class="fa fa-star checked" style="color:gold"></span>
+                        } 
+                        @for (int i = Model.Rate; i < 5; i++)
+                        {
+                            <span class="fa fa-star"></span>
+                        }
+                
+                        </div> 
+                    </dd>   
+                    <dt class="col-sm-3">Location: </dt>
+                    <dd class="col-sm-9"><a href="#mapdiv">Go to map</a></dd>
+
+                </dl> 
+        </div>
+    </div>
+    <partial name="MapPartialView" model="Model" />
+<script>
+    var detailsModel = @Html.Raw(JsonConvert.SerializeObject(Model));
+    map.addLayer(creatFeatures([detailsModel], "placeholder.png", "Details"));
+    let coords = ol.proj.transform([detailsModel.Y, detailsModel.X],
+        "EPSG:4326",
+        "EPSG:3857"
+    );
+    map.getView().animate({ zoom: 14 }, { center: coords });
+    document.querySelector("#go").remove();
+</script>
+
+    <div class="container-fluid bg-light p-5">
+        <div class="container my-4 py-4 border-top border-bottom">
+            <h2 class="text-center mb-4">Reviews</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Review 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero vel quam efficitur consectetur. Nulla facilisi. Praesent vel molestie leo. Vivamus accumsan nisl quis felis vestibulum, sit amet molestie quam tristique.</p>
+                            <p class="card-text"><small class="text-muted">John Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Review 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero vel quam efficitur consectetur. Nulla facilisi. Praesent vel molestie leo. Vivamus accumsan nisl quis felis vestibulum, sit amet molestie quam tristique.</p>
+                            <p class="card-text"><small class="text-muted">Jane Smith</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Review 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero vel quam efficitur consectetur. Nulla facilisi. Praesent vel molestie leo. Vivamus accumsan nisl quis felis vestibulum, sit amet molestie quam tristique.</p>
+                            <p class="card-text"><small class="text-muted">Bob Johnson</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .bg-light {
+            background-color: #f5f5f5;
+        }
+    </style>
+</div>  

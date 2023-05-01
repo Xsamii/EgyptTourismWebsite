@@ -1,0 +1,49 @@
+﻿@model EgyptTouristWebSite.ViewModel.SigninVM
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="col-form-label col-form-label-lg mt-4">Please Enter your Username</label>
+                <input asp-for="UserName" class="form-control form-control-lg" id="userName" name="userName" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+                @*@Html.TextBox("userName",new{@class="form-control is-invalid"});*@
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="col-form-label col-form-label-lg mt-4">Please enter your password:</label>
+                <input asp-for="Password" class="form-control form-control-lg" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-check form-switch mt-5 mb-5">
+                <input class="form-check-input" asp-for="RememberMe" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label " for="flexSwitchCheckDefault">Remember me</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@*@foreach (var provider in Model.ExternalLogins)
+{
+    <div>
+        <form action="@Url.Action("ExternalLogin", "Account")" method="post">
+            <input type="hidden" name="provider" value="@provider.Name" />
+            <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+            <button type="submit" class="btn btn-primary">@provider.DisplayName</button>
+        </form>
+    </div>
+}*@
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
